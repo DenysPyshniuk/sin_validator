@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <title>SIN Validator</title>
+</head>
+
+<body class="flex flex-col items-center justify-center h-screen">
+    <div class="text-center mb-4 w-full sm:w-1/3">
+        <h1 class="m-auto text-4xl font-bold font-serif text-gray-800">Welcome to SIN Validator</h1>
+        <h6 class="mt-4">Enter your 9 digits SIN # below:</h6>
+    </div>
+    <form id="input-form" class="form w-full sm:w-1/3">
+        <input id="input" name="input" placeholder="123456789" required class="block m-auto mb-1 mt-1 rounded-md border-2 text-center w-full text-3xl font-medium leading-10 text-gray-200" />
+
+        <button type="submit" class="block w-full m-auto rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            role="switch " aria-checked="false " aria-labelledby="switch-1-label">
+            Validate
+        </button>
+    </form>
+    <div class="mt-4 w-full sm:w-1/3">
+        <p id="message-area" class="text-center font-bold h-[1.5rem]"></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
